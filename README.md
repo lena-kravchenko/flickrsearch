@@ -21,15 +21,15 @@ Bookmarks are saved to the browser local storage.
 
 ## Nice to Have Things
 
-There are few more things that will increase the possibility of being hired.
-The UI may be implemented with using a UI framework, for example: Material UI, KendoUI, whatever.
-Code style is important.
-More tests – more respect.
-The code should be placed to any source control system.
-Also, it would be nice to deploy the app to any public service to view it in action.
-Bookmarks may be saves to one of public bookmarks services. The Profile window may be used for an authentication.
-The app may monitor user’s activity; if there is no user activity (mouse movements), let’s say, in one minute, the app should end user session (if some 3rd party bookmarks service is used) and should display a mask over the user interface.
-If we go with this activity monitoring, let’s handle few app tabs properly. If a user has opened two or more app tabs in the same browser window the app should monitor his activity in the active tab (if any) and should not lock other inactive tabs.
+- There are few more things that will increase the possibility of being hired.
+- The UI may be implemented with using a UI framework, for example: Material UI, KendoUI, whatever.
+- Code style is important.
+- More tests – more respect.
+- The code should be placed to any source control system.
+- Also, it would be nice to deploy the app to any public service to view it in action.
+- Bookmarks may be saves to one of public bookmarks services. The Profile window may be used for an authentication.
+- The app may monitor user’s activity; if there is no user activity (mouse movements), let’s say, in one minute, the app should end user session (if some 3rd party bookmarks service is used) and should display a mask over the user interface.
+- If we go with this activity monitoring, let’s handle few app tabs properly. If a user has opened two or more app tabs in the same browser window the app should monitor his activity in the active tab (if any) and should not lock other inactive tabs.
 
 ## Troubleshooting
 
