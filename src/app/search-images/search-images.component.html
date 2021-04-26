@@ -1,0 +1,46 @@
+<div class="container">
+  <h1 class="text-center">Image Finder</h1>
+  <div class="form-group">
+    <input
+      type="search"
+      class="form-control"
+      (keyup)="search($event)"
+      (keydown)="showImage()"
+      placeholder="Find images"
+    >
+  </div>
+
+  <div *ngIf="imagesAreShown; else noImages">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let image of images">
+        <div class="card">
+          <a href="{{image.url}}_b.jpg">
+            <img
+              src="{{image.url}}_m.jpg"
+              title="{{image.title}}"
+              alt="{{image.title}}"
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noImages>
+    <p>No images here. Would you try to search for anything else?</p>
+  </ng-template>
+
+<!--   <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let image of images">
+      <div class="card">
+        <a href="{{image.url}}_b.jpg">
+          <img
+            src="{{image.url}}_m.jpg"
+            title="{{image.title}}"
+            alt="{{image.title}}"
+          >
+        </a>
+      </div>
+    </div>
+  </div> -->
+</div>
