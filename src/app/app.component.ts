@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import { FlickrService } from './services/flickr.service'; // -- for pagination
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'flickrsearch';
+
+  //constructor(private flickr: FlickrService) {} // -- for pagination
 }

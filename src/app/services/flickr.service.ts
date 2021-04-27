@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 
@@ -23,6 +23,7 @@ export interface FlickrOutput {
 export class FlickrService {
 
   constructor(private http: HttpClient) { }
+  // constructor(private httpService: HttpClient) { } ---- for pagination
 
   search_keyword(keyword: string) {
     const url = 'https://www.flickr.com/services/rest/?method=flickr.photos.search&';

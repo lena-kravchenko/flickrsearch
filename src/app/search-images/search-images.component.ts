@@ -10,13 +10,17 @@ export class SearchImagesComponent implements OnInit {
   images = [];
   keyword: string;
 
+  p: any; // for pagination
+
   imagesAreShown = false;
 
   showImage() {
     this.imagesAreShown = !this.imagesAreShown;
   }
 
-  constructor(private flickrService: FlickrService) { }
+  constructor(
+    private flickrService: FlickrService
+  ) { }
 
   ngOnInit(): void {
   }
@@ -31,5 +35,4 @@ export class SearchImagesComponent implements OnInit {
       });
     }
   }
-
 }
