@@ -11,6 +11,9 @@
   </div>
 
   <div *ngIf="imagesAreShown; else noImages">
+    <pagination-controls (pageChange)="p = $event" class="pagination justify-content-right">
+    </pagination-controls>
+    
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let image of images">
         <div class="card">
