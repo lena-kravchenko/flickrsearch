@@ -6,11 +6,13 @@ import { SearchImagesComponent } from './search-images/search-images.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { NgxPaginationModule } from 'ngx-pagination';
+import { CopyrightsComponent } from './copyrights/copyrights.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchImagesComponent
+    SearchImagesComponent,
+    CopyrightsComponent
   ],
   imports: [
     BrowserModule,

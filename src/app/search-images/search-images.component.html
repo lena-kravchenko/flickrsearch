@@ -15,7 +15,7 @@
     </pagination-controls>
 
     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let image of images | paginate: { itemsPerPage: 6, currentPage: p }">
+      <div class="col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let image of images | paginate: { itemsPerPage: 3, currentPage: p }">
         <div class="card">
           <a href="{{image.url}}_b.jpg">
             <img
@@ -24,6 +24,24 @@
               alt="{{image.title}}"
             >
           </a>
+
+          <div class="button button--bookmark">
+            <button
+              type="button"
+              (click)="bookmarkIt()"
+            >
+              Bookmark it!
+            </button>
+          </div>
+
+          <div class="input input--tags">
+            <input
+              type="text"
+              (input)="inputHandler($event)"
+              placeholder="Some tags?"
+            >
+          </div>
+
         </div>
       </div>
     </div>
@@ -33,17 +51,4 @@
     <p>No images here. Would you try to search for anything else?</p>
   </ng-template>
 
-<!--   <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-4 p-3" *ngFor="let image of images">
-      <div class="card">
-        <a href="{{image.url}}_b.jpg">
-          <img
-            src="{{image.url}}_m.jpg"
-            title="{{image.title}}"
-            alt="{{image.title}}"
-          >
-        </a>
-      </div>
-    </div>
-  </div> -->
 </div>

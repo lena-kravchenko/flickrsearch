@@ -9,7 +9,7 @@ import { FlickrService } from '../services/flickr.service';
 export class SearchImagesComponent implements OnInit {
   images = [];
   keyword: string;
-  p: any; // for pagination
+  p: number; // for pagination
 
   imagesAreShown = false;
 
@@ -31,6 +31,11 @@ export class SearchImagesComponent implements OnInit {
         this.images = res;
       });
     }
+  }
+
+  inputHandler(event: any) {
+    const value = event.target.value;
+    console.log(value);
   }
 
 }
