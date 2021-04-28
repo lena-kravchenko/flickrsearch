@@ -1,6 +1,6 @@
 # Flickrsearch
 
-- [DEMO LINK](https://lena-kravchenko.github.io/Angular-Search-on-Flickr/)
+- [DEMO LINK](https://lena-kravchenko.github.io/flickrsearch/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
