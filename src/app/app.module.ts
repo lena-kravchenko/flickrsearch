@@ -7,12 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CopyrightsComponent } from './copyrights/copyrights.component';
+import { LoginComponent } from './auth/components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchImagesComponent,
-    CopyrightsComponent
+    CopyrightsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-6 offset-md-3 mt-4">
+    <h3>Login</h3>
+
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="loginUsername"
+        placeholder="Enter username"
+      >
+      <label for="loginUsername">Username</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="password"
+        class="form-control"
+        id="loginPassword"
+        placeholder="Password"
+      >
+      <label for="loginPassword">Password</label>
+    </div>
+    <div class="form-floating">
+      <!-- <a [routerLink]="['/routePath']" >Forgot Password</a>
+      TODO: add routerLink! -->
+      <a [routerLink]="['/routePath']" >Forgot Password</a>
+    </div>
+    <button
+      type="submit"
+      class="btn btn-primary"
+    >
+      Login
+    </button>
+
+
+  </div>
+</div>
