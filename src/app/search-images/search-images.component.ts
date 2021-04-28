@@ -9,7 +9,7 @@ import { FlickrService } from '../services/flickr.service';
 export class SearchImagesComponent implements OnInit {
   images = [];
   keyword: string;
-  p: number;
+  p: number; // for pagination
 
   imagesAreShown = false;
 
