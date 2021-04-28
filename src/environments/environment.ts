@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  flickr: {
+/*   flickr: {
     key: 'f86c0a4bc487f162a1b7d63d65ad525b'
-  }
+  } */
 };
 
 /*
